@@ -1,0 +1,214 @@
+/*
+  --color-primario: #007BFF;
+  --color-verde: #28A745;
+  --color-naranja: #FF8000;
+*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+/*  HEADER  */
+
+header
+{
+  height: 130px;
+  background-color: #28A745;
+}
+
+nav
+{
+  height: 100%;
+}
+
+ul
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  margin-left: 200px;
+}
+
+li
+{
+  list-style: none;
+
+}
+
+a
+{
+  color: #FF8000;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.img-logo
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+/*  MAIN  */
+
+main
+{
+  margin: 40px 100px;
+  padding: 20px 20px;
+}
+
+h1
+{
+  font-size: 10rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #410936;
+}
+
+.bienvenido
+{
+  margin-bottom: 50px;
+}
+
+section
+{
+  margin: 100px 50px;
+}
+
+.hook
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h2
+{
+  font-size: 5rem;
+  width: 1000px;
+  margin-top: 100px;
+}
+
+p
+{
+  font-size: 2rem;
+}
+
+h3
+{
+  color: #410936;
+}
+
+.img-inicio
+{
+  width: 500px;
+  height: 500px;
+  border: solid #007BFF;
+  border-radius: 250px;
+}
+
+.slogan
+{
+  margin: 80px 0;
+}
+
+.video
+{
+  width: 100%;
+  margin-top: 15px;
+}
+
+h3
+{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.blogEntry
+{
+  border: #28A745 solid;
+}
+
+.blogEntry p
+{
+  font-size: 18px;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.imgBlog1
+{
+  width: 40%;
+  margin: 5px 5px;
+}
+
+.container
+{
+  display: flex;
+}
+
+.botonMas
+{
+  padding: 8px;
+  background-color: #007BFF;
+  border-radius: 10px;
+  right: 1px;
+}
+
+.post
+{
+margin: 30px 0;
+padding: 40px;
+}
+
+#verMas
+{
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*  FOOTER  */
+
+footer
+{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p
+{
+  color: white;
+
+}
+
+footer ul
+{
+  display: list-item;
+}
+
+footer li
+{
+  list-style: none;
+}
+
+footer ul li a
+{
+  color: white;
+  font-size: 2rem;
+}
