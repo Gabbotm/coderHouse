@@ -8,6 +8,7 @@
 {
 	margin: 0;
 	padding: 0;
+  color: #ffffff;
 }
 
 html
@@ -15,17 +16,28 @@ html
   font-size: 62.5%;
 }
 
+body
+{
+  background-color: #000000;
+}
+
 /*  HEADER  */
 
 header
 {
-  height: 130px;
-  background-color: #28A745;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff0000;
 }
 
 nav
 {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 ul
@@ -34,37 +46,48 @@ ul
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
-  margin-left: 200px;
 }
 
 li
 {
   list-style: none;
-
+  display: inline-block;
+  margin: 0 10px;
 }
 
-a
+li a
 {
-  color: #FF8000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: #00000000;
+  transition: background-color 0.5s;
+}
+
+li a:hover
+{
+  background-color: #000000;
+  color: #ff0000;
 }
 
 .img-logo
 {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px #ffffff;
 }
 
 /*  MAIN  */
 
 main
 {
-  margin: 40px 100px;
-  padding: 20px 20px;
+  margin-top: 300px;
 }
 
 h1
@@ -72,17 +95,29 @@ h1
   font-size: 10rem;
   margin-top: 50px;
   margin-bottom: 50px;
-  color: #410936;
+  color: #ffffff;
+  text-shadow: 10px 10px 10px #ff1919, 10px 10px 20px #000000, 10px 10px 50px #ffffff;
 }
 
-.bienvenido
+.fadeIn
 {
-  margin-bottom: 50px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+.shadow
+{
+  text-shadow: 0 0 20px #ffffff, 0 0 10px #e71212;
 }
 
 section
 {
-  margin: 100px 50px;
+  margin: 200px 0;
+  text-align: center;
+  align-items: center;
 }
 
 .hook
@@ -96,8 +131,6 @@ section
 h2
 {
   font-size: 5rem;
-  width: 1000px;
-  margin-top: 100px;
 }
 
 p
@@ -107,15 +140,76 @@ p
 
 h3
 {
-  color: #410936;
+  color: #df0000;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #7c6f6f;
+}
+
+h4
+{
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h5
+{
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h6
+{
+  font-size: 3rem;
+  text-align: left;
+}
+
+input[type=text], select, textarea 
+{
+  width: 100%;
+  padding: 12px;
+  color: #000000;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] 
+{
+  background-color: #000000;
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+  background-color: #ff0000;
+}
+
+label
+{
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #000000, 0 0 20px #ffffff;
+}
+
+option
+{
+  color: #000000;
 }
 
 .img-inicio
 {
-  width: 500px;
-  height: 500px;
-  border: solid #007BFF;
-  border-radius: 250px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
 }
 
 .slogan
@@ -129,54 +223,107 @@ h3
   margin-top: 15px;
 }
 
-h3
+.sectionBlog
 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  align-items: center;
+}
+
+.title
+{
+  margin-bottom: 80px;
 }
 
 .blogEntry
 {
-  border: #28A745 solid;
+  border: #ffffff solid;
+  box-shadow: 0 0 20px #ffffff;
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
 .blogEntry p
 {
   font-size: 18px;
   text-align: justify;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 .imgBlog1
 {
-  width: 40%;
+  width: 100%;
   margin: 5px 5px;
-}
-
-.container
-{
-  display: flex;
 }
 
 .botonMas
 {
+  height: 50px;
+  width: 130px;  
   padding: 8px;
-  background-color: #007BFF;
-  border-radius: 10px;
-  right: 1px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-size: 1.5rem;
 }
 
-.post
+.aboutUs
 {
-margin: 30px 0;
-padding: 40px;
+  margin: 250px auto;
 }
 
-#verMas
+.opinión
 {
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.gap
+{
+  margin: 40px auto;
+}
+
+.listaKaizen
+{
+  margin: 50px auto;
+}
+
+.subrayado
+{
+  text-decoration: underline;
+}
+
+.sobre
+{
+  font-size: 2rem;
+}
+
+.sobre-1
+{
+  font-size: 1.5rem;
+}
+
+.gracias
+{
+  font-size: 3rem;
+}
+
+.center
+{
+  align-items: center;
+  text-align: center;
+}
+
+.listaPromesa
+{
+  font-size: 3rem;
+  margin: 15px auto;
+}
+
+.formulario
+{
+  margin-top: 150px;
+  padding: 40px;
+  background-color: #747474;
+  border-radius: 50px;
+  box-shadow: 20px 20px 30px #ccc;
 }
 
 
@@ -185,30 +332,40 @@ padding: 40px;
 
 footer
 {
-  background-color: black;
+  height: 80px;
+  background-color: #ff0000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 0;
 }
 
-footer p
-{
-  color: white;
-
-}
-
-footer ul
-{
-  display: list-item;
-}
-
-footer li
+footer ul li
 {
   list-style: none;
 }
 
 footer ul li a
 {
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: none;
+}
+
+footer ul li a:hover
+{
+  color: #000000;
+  background-color: #00000000;
+}
+
+.elFooter
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
