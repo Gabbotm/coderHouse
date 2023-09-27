@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Inicio - Muscle Kaizen</title>
 
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-            
-        <!-- cssMain -->
-            <link rel="stylesheet" href="css/style.css">
-    </head>
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+		
+		<!-- cssMain -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
     <body>
         
         <header class="container-fluid">
-                
-            <nav class="navigation container-xxl">
-                <a href="index.html"><img src="img/logo.png" class="img-logo"></a>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobreNosotros.html">Nosotros</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="articulos.html">Artículos</a></li>
-                    <li><a href="contacto.html">Contáctanos</a></li>
-                </ul>	
-            </nav>
-
-        </header>
+			<div class="container-xl navigation">
+				<a href="index.html" class="enlaceLogo"><img src="img/logo.png" class="img-logo"></a>
+				<button class="abrirMenu" id="abrir"><i class="bi bi-list"></i></button>
+				<nav class="nav" id="nav">
+					<button class="cerrarMenu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+					<ul class="navList">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="sobreNosotros.html">Nosotros</a></li>
+						<li><a href="blogs.html">Blogs</a></li>
+						<li><a href="articulos.html">Artículos</a></li>
+						<li><a href="contacto.html">Contáctanos</a></li>
+					</ul>	
+				</nav>
+			</div>
+		</header>
 
         <main class="container-xxl">
 
@@ -34,58 +38,165 @@
                 <h1>Blogs</h1>
             </div>
 
-            <section class="container-xl blogEntry">
-                <h3>
-                    Título 1
-                </h3>
-                <p>
-                    Nam ullamcorper euismod ornare. Cras id accumsan nunc. Praesent faucibus sapien at justo euismod consequat. Phasellus diam metus, venenatis vitae velit sit amet, faucibus fermentum est. Sed non vulputate nibh, id interdum turpis. Nullam a velit eget diam ultrices dictum et et enim. Aenean bibendum luctus venenatis. Nullam aliquam sit amet turpis id molestie. Curabitur semper, odio in gravida bibendum, ligula metus aliquet libero, ac iaculis lacus arcu congue est. Suspendisse commodo fermentum porta. Nulla et tellus quis ex mattis eleifend lacinia posuere ante. Suspendisse vitae euismod leo. Proin sit amet dignissim tellus. Phasellus bibendum, massa sit amet scelerisque egestas, nunc turpis scelerisque tellus, ac luctus est risus eget velit. Sed tristique non velit quis vehicula. Suspendisse hendrerit lectus ac justo pharetra, ac congue est ullamcorper. Nullam pulvinar urna a dui convallis commodo. Sed vel massa a risus iaculis tempor. Vivamus pretium enim nunc, ut vulputate eros mollis ac. Sed luctus dapibus magna quis pellentesque. In rutrum euismod justo, at semper arcu efficitur vel. Sed posuere mi eu tempor gravida. Sed eu tempus nisl, ac ullamcorper lorem. Mauris accumsan consequat massa vel hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mauris velit, iaculis id dignissim nec, faucibus vel est.
-                </p>
-                <img src="./img/imgblog1.jpg" class="container">
-                <p>
-                    Nulla et tellus quis ex mattis eleifend lacinia posuere ante. Suspendisse vitae euismod leo. Proin sit amet dignissim tellus. Phasellus bibendum, massa sit amet scelerisque egestas, nunc turpis scelerisque tellus, ac luctus est risus eget velit. Sed tristique non velit quis vehicula. Suspendisse hendrerit lectus ac justo pharetra, ac congue est ullamcorper. Nullam pulvinar urna a dui convallis commodo. Sed vel massa a risus iaculis tempor. Vivamus pretium enim nunc, ut vulputate eros mollis ac. Sed luctus dapibus magna quis pellentesque. In rutrum euismod justo, at semper arcu efficitur vel. Sed posuere mi eu tempor gravida. Sed eu tempus nisl, ac ullamcorper lorem. Mauris accumsan consequat massa vel hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mauris velit, iaculis id dignissim nec, faucibus vel est.
-                </p>
-            </section>
+ 
+            
+            <section class="container-xl mainGap">
+                
+                <div class="container-lg blogEntry2">   
+                    <div class="row center">
+                        <div class="col-sm-12 col-lg-8">
+                            <img src="./img/kettlebell.jpg" class="imgBlog3">
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <h3>
+                                ¿Cuáles son los mejores ejercicios para brazos de mujeres?
+                            </h3>
+                            <p class="fecha">Chile 20/09/2023</p>
+                        </div>
+                    </div>
+                    <details class="regularPost">
+                        <p>
+                            Lo que más buscan las mujeres, normalmente, son ejercicios para adelgazar los brazos o para mejorar su flacidez. Muchas veces nos confundimos, pero una mujer debe realizar los ejercicios para brazos de mujeres de manera parecida a los hombres, por eso tienes que olvidar la idea de que coger pesos pesados te va a dar un aspecto masculino y empieza a pensar que o realmente te esfuerzas y sacrificas o no vas a conseguir el cuerpo que tienes en mente.    
+                        </p>
+                        <p>
+                            Antes de comenzar los ejercicios para brazos de mujeres haz un pequeño calentamiento, tanto a nivel cardiovascular como unos minutos de remo o elíptica como a nivel articular los movimientos de brazos y rotaciones. </br> Entre series puedes descansar aproximadamente un minuto y siempre llegando al fallo muscular, si al llegar a la última repetición marcada aún puedes hacer muchas más es que no lo has hecho con la intensidad suficiente, por lo tanto debes aumentar el peso y concentrarte más.
+                        </p>
+                        <p>
+                            Dividiremos la rutina en tres bloques, una primera parte destinada al bíceps, una segunda al tríceps y una tercera al antebrazo y hombro, para trabajar el brazo por completo. Puedes llevar a cabo esta rutina en casa con ayuda de muy poco material, de cada ejercicio haremos 4 series de 15 repeticiones. Observa las imágenes para adoptar la técnica correcta y no implicar los músculos que no deseamos, una buena ejecución es fundamental para conseguir resultados y evitar lesiones.
+                        </p>
+                    </details>
+                </div>
 
-            <section class="container-xl blogEntry">
-                <h3>
-                    Título 2
-                </h3>
-                <p>
-                    Nam ullamcorper euismod ornare. Cras id accumsan nunc. Praesent faucibus sapien at justo euismod consequat. Phasellus diam metus, venenatis vitae velit sit amet, faucibus fermentum est. Sed non vulputate nibh, id interdum turpis. Nullam a velit eget diam ultrices dictum et et enim. Aenean bibendum luctus venenatis. Nullam aliquam sit amet turpis id molestie. Curabitur semper, odio in gravida bibendum, ligula metus aliquet libero, ac iaculis lacus arcu congue est. Suspendisse commodo fermentum porta. Nulla et tellus quis ex mattis eleifend lacinia posuere ante. Suspendisse vitae euismod leo. Proin sit amet dignissim tellus. Phasellus bibendum, massa sit amet scelerisque egestas, nunc turpis scelerisque tellus, ac luctus est risus eget velit. Sed tristique non velit quis vehicula. Suspendisse hendrerit lectus ac justo pharetra, ac congue est ullamcorper. Nullam pulvinar urna a dui convallis commodo. Sed vel massa a risus iaculis tempor. Vivamus pretium enim nunc, ut vulputate eros mollis ac. Sed luctus dapibus magna quis pellentesque. In rutrum euismod justo, at semper arcu efficitur vel. Sed posuere mi eu tempor gravida. Sed eu tempus nisl, ac ullamcorper lorem. Mauris accumsan consequat massa vel hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mauris velit, iaculis id dignissim nec, faucibus vel est.
-                </p>
-                <img src="./img/img9.jpg" class="container">
-                <p>
-                    Nulla et tellus quis ex mattis eleifend lacinia posuere ante. Suspendisse vitae euismod leo. Proin sit amet dignissim tellus. Phasellus bibendum, massa sit amet scelerisque egestas, nunc turpis scelerisque tellus, ac luctus est risus eget velit. Sed tristique non velit quis vehicula. Suspendisse hendrerit lectus ac justo pharetra, ac congue est ullamcorper. Nullam pulvinar urna a dui convallis commodo. Sed vel massa a risus iaculis tempor. Vivamus pretium enim nunc, ut vulputate eros mollis ac. Sed luctus dapibus magna quis pellentesque. In rutrum euismod justo, at semper arcu efficitur vel. Sed posuere mi eu tempor gravida. Sed eu tempus nisl, ac ullamcorper lorem. Mauris accumsan consequat massa vel hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mauris velit, iaculis id dignissim nec, faucibus vel est.
-                </p>
-            </section>
+                <div class="container-lg blogEntry2">   
+                    <div class="row center">
+                        <div class="col-sm-12 col-lg-8">
+                            <img src="./img/cereal.jpg" class="imgBlog3">
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <h3>
+                                Seis Alimentos Esenciales en tu Nutrición
+                            </h3>
+                            <p class="fecha">Chile 20/09/2023</p>
+                        </div>
+                    </div>
+                    <details class="regularPost">
+                        <h6>
+                            Almendras
+                        </h6>
+                        <p>
+                            Las almendras destacan por su alto contenido en calcio, necesario en tu organismo para unos huesos fuertes, por su contenido en ácidos grasos vegetales y una gran cantidad de potasio, esencial para la transmisión de los impulsos nerviosos. Se trata del fruto seco más nutritivo del mundo. Las almendras son ricas en fibra, proteína, vitaminas B y E, grasas saludables, hierro, calcio y fosforo entre muchos otros. Nos ayudarán a obtener un aporte extra de energía para afrontar los días más intensos de entrenamiento.
+                            <br> Son ideales para picar entre horas.
+                        </p>
+                        <h6>
+                            Salmón
+                        </h6>
+                        <p>
+                            El salmón es un alimento muy completo, rico en ácidos grasos omega 3 que aportan las calorías necesarias que dan energía al cuerpo. Energía necesaria para los días de entreno más completos. Es una gran fuente de proteína de alto valor biológico y que nos ayuda a ganar masa muscular, ideal para consumir por la noche, puesto que los ácidos grasos juegan un papel fundamental regulando el sistema hormonal.
+                        </p>
+                        <h6>
+                            Huevos
+                        </h6>
+                        <p>
+                            Considerado uno de los alimentos más nutritivos del planeta. El huevo enriquece la salud física y mental aportando vitaminas, minerales y proteínas, además de aminoácidos esenciales para el correcto funcionamiento de nuestro metabolismo. El huevo es claramente el mejor alimento para un desayuno fitness antes de empezar una larga jornada de entreno en el gimnasio. El huevo resulta ser el aliado perfecto para ganar masa muscular de forma saludable, ya que la clara es la encargada de activar la síntesis de las proteínas ingeridas.
+                        </p>
+                        <h6>
+                            Avena
+                        </h6>
+                        <p>
+                            Energía, fibra, proteína, grasas e hidratos de carbono, un cereal muy completo que nos aporta gran cantidad de beneficios, entre ellos un gran aporte de ácidos grasas insaturados, y un buen puñado de energía y fibra. Entre sus virtudes destaca su poder saciante, su ayuda para controlar la diabetes y a reducir el colesterol. La avena ayuda a reparar y construir fibras musculares de manera natural. Por lo tanto es un alimento útil para aumentar la masa muscular.
+                        </p>
+                        <h6>
+                            Kiwi
+                        </h6>
+                        <p>
+                            El Kiwi es sin duda el rey de la vitamina C, la fruta que más vitamina C posee por encima de las naranjas, nos ayuda a obtener más energía para los días de entreno, es rico en sales minerales, sobre todo potasio, casi tanto como el plátano. El Kiwi evita la retención de líquidos y previene la contracción muscular. Su gran fuente de agua te ayudará a mantenerte hidratado. Además, contiene fibra dietética que ayuda al tránsito intestinal y refuerza nuestro sistema inmunológico, aporta vitalidad y reduce la fatiga y el cansancio.
+                        </p>
+                        <h6>
+                            Aguacate
+                        </h6>
+                        <p>
+                            El aguacate es un alimento extraordinario con cada día más seguidores. Resulta ser un alimento con un alto contenido de grasas monoinsaturadas, como las que encontramos en el aceite de oliva. Además destaca por su vitamina E que protege la membrana celular y su núcleo. Es un alimento recomendado para deportistas ya que aporta energía y grasas sanas para hacer frente a los ejercicios más intensos del gimnasio.
+                        </p>
+                    </details>
+                </div>
 
-            <section class="container-xl blogEntry">
-                <h3>
-                    Título 3
-                </h3>
-                <p>
-                    Nam ullamcorper euismod ornare. Cras id accumsan nunc. Praesent faucibus sapien at justo euismod consequat. Phasellus diam metus, venenatis vitae velit sit amet, faucibus fermentum est. Sed non vulputate nibh, id interdum turpis. Nullam a velit eget diam ultrices dictum et et enim. Aenean bibendum luctus venenatis. Nullam aliquam sit amet turpis id molestie. Curabitur semper, odio in gravida bibendum, ligula metus aliquet libero, ac iaculis lacus arcu congue est. Suspendisse commodo fermentum porta. Nulla et tellus quis ex mattis eleifend lacinia posuere ante. Suspendisse vitae euismod leo. Proin sit amet dignissim tellus. Phasellus bibendum, massa sit amet scelerisque egestas, nunc turpis scelerisque tellus, ac luctus est risus eget velit. Sed tristique non velit quis vehicula. Suspendisse hendrerit lectus ac justo pharetra, ac congue est ullamcorper. Nullam pulvinar urna a dui convallis commodo. Sed vel massa a risus iaculis tempor. Vivamus pretium enim nunc, ut vulputate eros mollis ac. Sed luctus dapibus magna quis pellentesque. In rutrum euismod justo, at semper arcu efficitur vel. Sed posuere mi eu tempor gravida. Sed eu tempus nisl, ac ullamcorper lorem. Mauris accumsan consequat massa vel hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mauris velit, iaculis id dignissim nec, faucibus vel est.
-                </p>
-                <img src="./img/image.jpg" class="container">
-                <p>
-                    Nulla et tellus quis ex mattis eleifend lacinia posuere ante. Suspendisse vitae euismod leo. Proin sit amet dignissim tellus. Phasellus bibendum, massa sit amet scelerisque egestas, nunc turpis scelerisque tellus, ac luctus est risus eget velit. Sed tristique non velit quis vehicula. Suspendisse hendrerit lectus ac justo pharetra, ac congue est ullamcorper. Nullam pulvinar urna a dui convallis commodo. Sed vel massa a risus iaculis tempor. Vivamus pretium enim nunc, ut vulputate eros mollis ac. Sed luctus dapibus magna quis pellentesque. In rutrum euismod justo, at semper arcu efficitur vel. Sed posuere mi eu tempor gravida. Sed eu tempus nisl, ac ullamcorper lorem. Mauris accumsan consequat massa vel hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin mauris velit, iaculis id dignissim nec, faucibus vel est.
-                </p>
+                <div class="container-lg blogEntry2">   
+                    <div class="row center">
+                        <div class="col-sm-12 col-lg-8">
+                            <img src="./img/sleep.jpg" class="imgBlog3">
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <h3>
+                                Dormir es la mejor manera para perder peso
+                            </h3>
+                            <p class="fecha">Chile 20/09/2023</p>
+                        </div>
+                    </div>
+                    <details class="regularPost">
+                        <p>
+                            ¿Te imaginas poder perder peso durmiendo? Pues es cierto, el descanso del cuerpo está directamente relacionado con tu peso. Aunque no debemos olvidar que el ejercicio físico y la dieta son dos puntos básicos. Los expertos apuntan a que la calidad de tu sueño es también determinante para tu plan de fitness.
+                        </p>
+                        <p>
+                            Dormir adelgaza. Resumiéndolo mucho, dormir más hace que tengas menos hambre y, por consiguiente, comas mucho menos. ¿Sigues sin creértelo? Te lo demuestro en estos cinco puntos.
+                        </p>
+                        <h6>1. Comes menos</h6>
+                        <p>
+                            Mucha gente considera que el hambre está relacionada con la fuerza de voluntad y que, para controlarla, todo cuanto tienes que hacer es controlar tus impulsos. Eso no es correcto. La sensación de hambre está controlada por dos hormonas (leptina y grelina) y dormir es la mejor manera para regularlas.
+                        </p>
+                        <p>
+                            La leptina es la hormona encargada de decirle a tu cerebro que ya está saciada. La grelina, por su parte, es la hormona que simula el apetito. La falta de sueño o, la mala calidad del mismo afectan directamente a estas dos hormonas, reduciendo los niveles de leptina y aumentando los de grelina. Un reciente estudio de la Journal of Clinical Endocrinoloy and Metabolism constató que las personas que no dormían bien, comían hasta  300 calorías más que las que tenían un descanso adecuado.
+                        </p>
+                        <h6>2. Evitas la absorción de grasa</h6>
+                        <p>
+                            Después de una noche de sueño reparador, tu cabeza se siente mucho más despejada y dispuesta para trabajar al 100%. Lo cierto es que, ese tipo de noches, tienen sorprendentes beneficios para cuerpo y mente. Está comprobado que el estrés y la ansiedad dificultan, y en mucho, la pérdida de peso. Cuando sientes ansiedad, además de tener más facilidad para caer en caprichos y golosinas, el cuerpo tiende a producir más coristol. Esta hormona, que se activa con el estrés, sube los niveles de azúcar en sangre y hace que el metabolismo absorba más grasas de lo normal. Analiza las condiciones que pueden afectar a tu descanso. Está comprobado que el ejercicio físico regular ayuda a conciliar el sueño. Así que no dejes de entrenar.
+                        </p>
+                        <h6>3. Eliminas células grasas</h6>
+                        <p>
+                            El descanso consigue eliminar grasas. Analizar y trabajar los factores que no te dejan dormir te ayudará a estar más activo por la mañana. Consulta nuestros consejos para conseguir un descanso más placentero. Muchos expertos coinciden en señalar que la falta de sueño predispone al cuerpo a la obesidad o a las enfermedades cardiovasculares. Además, otro dato curioso es que durmiendo, no sólo se eliminan la acumulación de grasa si no que también, se queman calorías. Según un estudio de American Journal of Clinical Nutrition, dormir quema hasta un 5% más calorías que estar en reposo.
+                        </p>
+                        <h6>4. Te proporciona más energía</h6>
+                        <p>
+                            Resulta obvio pensar que el descanso físico te ayuda a encarar el día con más energías. Después de una noche de sueño reparador, eres capaz de afrontar tu plan de entrenamiento con mucha mejor predisposición y, por consiguiente, el rendimiento en el gimnasio es más alto. Además de recargar las energías para el día siguiente, dormir bien te ayuda a tener un estado anímico adecuado y favorable.
+                        </p>
+                        <p>
+                            Lo que está claro es que si consigues construir músculo combatirás el exceso de grasa. Y, para conseguir músculo, hay dos cosas importantes: trabajar para conseguirlo y descansar cuando lo has trabajado. Dar descanso al cuerpo después de una sesión dura de entrenamiento es un paso necesario para completar tu proceso de musculación. Además, está comprobado que el cansancio hace bajar los niveles de la síntesis de tu cuerpo, las proteínas encargadas de construir músculo.
+                        </p>
+                        <h6>5. Te ayuda a comer mejor y más saludable</h6>
+                        <p>
+                            Ir al supermercado hambriento o cansado hace que compres alimentos mucho más calóricos. Un estudio de la Harvard Medical School, constató que el cerebro tiene menos capacidad de autocontrol frente a la comida calórica cuando duerme poco. Las personas que han dormido de manera insuficiente tienen una reacción cerebral menos resistente frente a un plato de comida con alto contenido que las personas que han descansado bien. Esto es porque el córtex prefrontal, la zona encargada de regular el comportamiento, está más inhibida.  Además la comida saludable ayuda a conciliar mejor el sueño. Consulta nuestra sección de recetas fitness para ideas novedosas y saludables.
+                        </p>
+
+                    </details>
+                </div>
+
+
             </section>
 
         </main>
 
         <footer class="container-fluid">
-            <div class="container-xxl elFooter row">	
-                <p class="col">&copy; Derechos Reservados - 2023</p>
-                <ul class="redesSociales col">
-                    <li><a href="#">YouTube</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </div>
-        </footer>
+			<div class="container-xl elFooter">	
+				
+					<p class="copy">&copy; Derechos Reservados - 2023</p>
+					<button class="abrirMenu">Abrir</button>
+					<ul class="redesSociales ">
+						<li><a href="#">YouTube</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+
+					<ul class="rrss">
+						<li><a href="#"><i class="bi bi-youtube"></i></a></li>
+						<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+						<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="#"><i class="bi bi-twitter"></i></a></li>
+					</ul>
+				
+			</div>
+		</footer>
+		
+		<script src="js/main.js"></script>
 
     </body>
 </html>

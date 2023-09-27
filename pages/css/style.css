@@ -32,12 +32,32 @@ header
   background-color: #ff0000;
 }
 
-nav
+.nav
 {
   height: 100%;
   display: flex;
   align-items: center;
+  
+}
+
+.navigation
+{
+  display: flex;
+  align-items: center;
+  height: 120px;
   justify-content: space-between;
+}
+
+.abrirMenu,
+.cerrarMenu
+{
+  display: none;
+  font-size: 4.5rem;
+  color: #00000000; 
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 ul
@@ -59,10 +79,11 @@ li a
 {
   color: #ffffff;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 10px;
   font-weight: bold;
   font-style: italic;
-  padding: 25px;
+  
   border-radius: 50%;
   background-color: #00000000;
   transition: background-color 0.5s;
@@ -92,7 +113,7 @@ main
 
 h1
 {
-  font-size: 10rem;
+  font-size: 9rem;
   margin-top: 50px;
   margin-bottom: 50px;
   color: #ffffff;
@@ -118,6 +139,7 @@ section
   margin: 200px 0;
   text-align: center;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .hook
@@ -205,10 +227,15 @@ option
   color: #000000;
 }
 
+button
+{
+  color: #000000;
+}
+
 .img-inicio
 {
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
 }
 
@@ -220,6 +247,7 @@ option
 .video
 {
   width: 100%;
+  height: 500px;
   margin-top: 15px;
 }
 
@@ -237,36 +265,109 @@ option
 {
   border: #ffffff solid;
   box-shadow: 0 0 20px #ffffff;
-  padding: 40px;
-  margin-bottom: 40px;
+  padding: 25px;
+  max-height: 1000px;
+  overflow: hidden;
 }
 
-.blogEntry p
+.blogEntry .blogParagraph
 {
   font-size: 18px;
   text-align: justify;
-  margin: 50px 0;
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.blogEntry2
+{
+  border: #ffffff solid;
+  box-shadow: 0 0 20px #ffffff;
+  padding: 25px;
+  max-height: auto;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.post
+{
+  margin: 20px auto;
+}
+
+.rowBlog
+{
+  justify-content: space-between;
+}
+
+.postGap
+{
+  margin: 40px auto;
+}
+
+.regularPost
+{
+  text-align: justify;
+  font-size: large;
 }
 
 .imgBlog1
 {
   width: 100%;
-  margin: 5px 5px;
+  height: 500px;
+  margin: 5px 5px 20px 5px;
+}
+
+.imgBlog2
+{
+  width: 100%;
+  max-height: 400px;
+}
+
+.imgBlog3
+{
+  height: 700px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.fecha
+{
+  position: relative;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .botonMas
 {
-  height: 50px;
-  width: 130px;  
+  height: 45px;
+  width: 110px;  
   padding: 8px;
   background-color: #ffffff;
+  transition: background-color 0.5s;
   border-radius: 20px;
   font-size: 1.5rem;
+  color: #000000;
 }
 
 .aboutUs
 {
   margin: 250px auto;
+}
+
+.retrato
+{
+  height: auto;
+  width: auto;
+}
+
+.yo
+{
+  margin: 100px auto;
+}
+
+.yo p
+{
+  text-align: left;
+  margin-left: 0;
 }
 
 .opinión
@@ -290,6 +391,8 @@ option
   text-decoration: underline;
 }
 
+
+
 .sobre
 {
   font-size: 2rem;
@@ -303,6 +406,21 @@ option
 .gracias
 {
   font-size: 3rem;
+}
+
+.promesa
+{
+  width: 100%;
+  height: 600px;
+  margin: 100px auto;
+  align-items: center;
+  text-align: center;
+}
+
+.promesa img
+{
+  border-radius: 80px;
+  width: 100%;
 }
 
 .center
@@ -324,14 +442,33 @@ option
   background-color: #747474;
   border-radius: 50px;
   box-shadow: 20px 20px 30px #ccc;
+  align-items: center;
 }
 
+.mainGap
+{
+  margin: 300px auto;
+}
 
+.map
+{
+  width: 100%; 
+  height: 450px;
+}
+
+.frame1
+{
+  border: 1px solid #747474;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 30px auto;
+}
 
 /*  FOOTER  */
 
 footer
 {
+  width: 100%;
   height: 80px;
   background-color: #ff0000;
   display: flex;
@@ -346,7 +483,7 @@ footer ul li
 footer ul li a
 {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   border: none;
   border-radius: none;
@@ -365,7 +502,64 @@ footer ul li a:hover
   align-items: center;
 }
 
+.rrss
+{
+  display: none;
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .abrirMenu,
+  .cerrarMenu {
+    display: block;
+  }
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: max-content;
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 0 0 100vmax #00000080;
+  }
+
+  .visible
+  {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navList
+  {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .redesSociales
+  {
+    display: none;
+  }
+
+  .copy
+  {
+    font-size: 1.5rem;
+  }
+
+  .rrss{
+    display: flex;
+  }
+
 }
